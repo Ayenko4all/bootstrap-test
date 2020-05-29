@@ -1,0 +1,394 @@
+
+/* // Extra large devices (large desktops, 1200px and up) */ 
+
+  body{
+    font-size: 14px;
+
+   
+  }
+
+  
+  #main-div{
+    max-width: 1140px;
+  }
+  
+  nav{
+    height: auto;
+  }
+  
+  .onsmall{
+    display: none;
+   }
+
+   .onbig{
+    display: block;
+   }
+  
+  #side-container{
+    width: 120px;
+  }
+  
+  #side-container ul li:hover{
+    background-color: rgb(212, 236, 238);
+  }
+  
+  #main-container{
+    width: 1110px;
+  }
+  
+  .Record-Expenses{
+    
+    background-color: rgb(212, 236, 238);
+    font-size: 16px;
+    
+  }
+  input{
+    text-decoration: none;
+  }
+  
+  input:focus{
+    border-color: #ffffff !important;
+    text-decoration: none;
+    outline-style: none;
+  }
+  
+  .Expenses-div{
+    height: 38px;
+  }
+  
+  #table-title{
+    height: 34px;
+    background-color: rgb(88, 82, 82);
+    color: aliceblue;
+  }
+  table tbody .td-red{
+    color:rgb(24, 155, 167);
+    text-decoration: underline;
+  }
+  
+  table tbody .td-blue{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  
+  table tbody .vendor{
+    color: rgb(54, 184, 196);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .search-box{
+    border-radius: 13px;
+  }
+  
+  img{
+    border-radius: 100%;
+  }
+  
+  .total-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-color: rgb(212, 236, 238);
+    padding-top: 8px ;
+  }
+
+  .outstanding-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding-top: 8px ;
+    background-color: rgb(240, 218, 198); 
+    border-color: red;
+    border-radius: bold;
+  }
+
+  .outstanding-div .advance{
+    color: rgb(24, 155, 167);
+    text-decoration: underline;
+    margin-left: 196px;
+  
+  }
+  
+  .total-div .total-amount{
+    margin-left: 100px;
+  }
+
+  #nav-two{
+    display: none;
+  }
+
+  #row-two{
+    display: none;
+  }
+
+  #onbig#wrapper{
+    text-align: center;
+    
+  }
+
+  .onsmall button{
+    display: none;
+  
+  }
+
+
+  @media screen and (max-width: 990px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+    #row-one{
+      display: none;
+    }
+    #row-two{
+      display: block;
+    }
+   
+    .content-out{
+      float: right;
+
+    }
+    .content-out a{
+      display: inline;
+    
+    }
+
+    img{
+      border-radius: 50%;
+    }
+
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+    #side-container{
+      display: none;
+    }
+
+    #main-container{
+      width: 100%;
+    }
+
+    .Expenses-div {
+      background-color: rgb(212, 236, 238);
+    }
+
+    .card{
+      border-color:  rgb(212, 236, 238);
+      
+    }
+
+    .total-div{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      background-color: rgb(212, 236, 238);
+      padding-top: 8px ;
+    }
+
+    .outstanding-div{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      padding-top: 8px ;
+      background-color: rgb(240, 218, 198); 
+      border: red;
+      border-radius: bold;
+    }
+
+   .outstanding-div p{
+      padding-left: 10px;;
+    }
+
+    .onsmall{
+      display: block;
+     }
+     
+     .onsmall button{
+       display: block;
+       width: 100%;
+       margin-bottom: 4px;
+      
+     }
+
+     
+
+  
+  }
+
+  @media screen and (max-width: 990px) and (min-width: 900px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 100px;
+    }
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 100px;
+    }
+  }
+
+  @media screen and (max-width: 900px) and (min-width: 895px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 70px;
+    }
+
+    #nav-two button{
+      border: none;
+    }
+  
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 70px;
+    }
+  }
+
+  @media screen and (max-width: 739px) and (min-width: 731px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 70px;
+    }
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 70px;
+    }
+  }
+
+  @media screen and (max-width: 739px) and (min-width: 599px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 70px;
+    }
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 70px;
+    }
+  }
+
+  @media screen and (max-width: 767px) and (min-width: 741px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 70px;
+    }
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 70px;
+    }
+  }
+
+  @media screen and (max-width: 887px) and (min-width: 779px){
+    #nav-two{
+      display: block;
+    }
+
+    #nav-one{
+      display: none;
+    }
+
+    #nav-two button, #navbarTogglerDemo03{
+      padding-left: 70px;
+    }
+    #nav-two button{
+      border: none;
+    }
+
+    #nav-two button:focus{
+      border: none;
+      outline-style: none;
+    }
+
+    .content-out{
+      padding-right: 70px;
+    }
+  }
+  
+ 
+
+
